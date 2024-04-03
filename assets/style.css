@@ -1,10 +1,10 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
     background-color: aquamarine;
     color: coral;
 }
 
 header {
+    font-family: Rubik Scribble;
     background-color: aquamarine;
     color: coral;
     text-align: center;
@@ -20,18 +20,17 @@ header h1 {
 }
 
 .slogan {
-    color: yellow;
+    color: rgb(30, 0, 255);
     font-size: 1.5rem;
-    border: solid orange;
-    border-radius: 8px;
 }
 
 .fact-button {
+    font-family: Rubik Scribble;
   padding: 20px 20px;
   font-size: 16px;
   text-align: center;
-  color: #fff;
-  background-color: #04AA6D;
+  color: #000000;
+  background-color: #ddff00;
   border: none;
   border-radius: 15px;
   box-shadow: 0px #05ece5;
@@ -60,4 +59,35 @@ header h1 {
     display: block;
     display: flex;
     justify-content: center;
+}
+
+/* .recipe-card {
+    width: 2rem;
+    height: 3rem;
+    background-color: darkorchid;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+.recipe-card {
+    font-family: Rubik Scribble;
+}
+
+.recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    font-family: Rubik Scribble;
+    display: flex;
+    justify-content: center;
+    color: black;
 }
