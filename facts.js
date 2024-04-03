@@ -1,5 +1,6 @@
 let requestURL = `https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true`;
-const factButton = document.getElementsByClassName('fact-button');
+const factButton = document.getElementById('fact-button');
+const displayFact = document.querySelector('#fact-display');
 
 const options = {
     headers: {
@@ -7,23 +8,15 @@ const options = {
         'X-RapidAPI-Host': 'numbersapi.p.rapidapi.com'
     }
 };
-/*
+
 function generateFacts() {
     fetch(requestURL, options).then(function (response) {
         return response.json();
     }).then(function (data) {
-        console.log(data);
-        console.log(data.text);
+        displayFact.textContent = `Year ${data.year}, ${data.text}`;
+    });
+}
 
-    })
-}*/
+generateFacts();
 
-factButton.addEventListener('click', function generateFacts(event) {
-    fetch(requestURL, options).then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        console.log(data);
-        console.log(data.text);
-
-    })
-})
+factButton.addEventListener('click', generateFacts);
