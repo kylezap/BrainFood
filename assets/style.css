@@ -5,7 +5,7 @@ body {
 
 header {
     font-family: Merriweather;
-    background-color: aquamarine;
+    background-color: rgb(1, 99, 66);
     color: coral;
     text-align: center;
     padding: 1rem;
@@ -20,7 +20,7 @@ header h1 {
 }
 
 .slogan {
-    color: rgb(30, 0, 255);
+    color: rgb(72, 255, 0);
     font-size: 1.5rem;
 }
 
@@ -60,6 +60,12 @@ header h1 {
     display: block;
     display: flex;
     justify-content: center;
+    border-radius: 30px;
+    padding: 10px
+}
+
+#search-input {
+    border-radius: 15px;
 }
 
 /* .recipe-card {
@@ -102,9 +108,7 @@ footer {
     color: black;
 }
 
-/* .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.search-button {
+    border-radius: 12px;
+}
 
