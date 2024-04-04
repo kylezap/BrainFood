@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    font-family: Rubik Scribble;
+    font-family: Merriweather;
     background-color: aquamarine;
     color: coral;
     text-align: center;
@@ -76,8 +76,9 @@ header h1 {
 } */
 
 .recipe-card {
-    font-family: Rubik Scribble;
+    font-family: Merriweather;
     justify-content: center;
+    color: darkblue;
 }
 
 .recipe-image {
@@ -97,7 +98,7 @@ footer {
 #fact-display {
     text-align: center;
     font-size: 24px;
-    font-family: Rubik Scribble;
+    font-family: Merriweather;
     color: black;
 }
 
