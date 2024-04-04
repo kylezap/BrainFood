@@ -8,7 +8,14 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <title>Kyle Test Page</title>
+    <style>
+        img {
+            width: 150px; 
+            height: 150px;
+            /* background-size: cover; */
 
+        }
+    </style>
 </head>
 
 <body>
@@ -16,12 +23,23 @@
         <h1 class="text-center">Hello World</h1>
         <form id="search">
             <div class="input-group input-group-lg">
-                <input type="text" id="search-input" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Enter ingredient(s)">
+                <input type="text" id="search-input" class="form-control" aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Enter ingredient(s)">
                 <button type="submit" class="btn btn-secondary btn-lg btn-block">Search for Recipes</button>
             </div>
         </form>
     </div>
-
+    <div id='results' class="container row d-flex justify-content-center mx-auto">
+        <!-- <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card with stretched link</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+        </div> -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="recipes.js"></script>
