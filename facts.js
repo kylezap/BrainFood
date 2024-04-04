@@ -1,5 +1,5 @@
 let requestURL = `https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true`;
-const factButton = document.getElementById('fact-button');
+const factButton = document.getElementById('fact-button-select');
 const displayFact = document.querySelector('#fact-display');
 
 const options = {

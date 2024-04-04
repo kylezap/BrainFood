@@ -27,6 +27,7 @@ function apiCall(event) {
 		})
 		.then(function (data) {
 			// console.log(recipeContent[0].display)
+			localStorage.getItem()
 			localStorage.setItem('search', input.val());
 			const recipeContent = data.feed;
 
