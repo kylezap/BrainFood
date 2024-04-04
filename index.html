@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to Brain Food!</h1>
-    <div class="slogan">
-        <p>We're feeding both your brain and your belly, one fact and one meal at a time!</p>
-    </div>
-</header>
+    <header>
+        <h1>Welcome to Brain Food!</h1>
+        <div class="slogan">
+            <p>We're feeding both your brain and your belly, one fact and one meal at a time!</p>
+        </div>
+    </header>
 
-<article>
-<section id="fact-button">
-    <button class="fact-button">Click Here for a Fun Fact</button>
-    </section>
+    <article>
+        <section id="fact-button">
+            <button class="fact-button">Click Here for a Fun Fact</button>
+        </section>
 
-<form id='search' class="search-container">
-    <input type="text" id="search-input" placeholder="Type here">
-    <button type='submit' class="search-button">Search</button>
-</form>
-</article>
+        <p id="fact-display"></p>
 
-<div class="container">
-    <section class="recipe-card row m-3 d-flex mx-auto">
-        <!-- <div class="card col-2 m-3" style="height: 12rem;"> Recipe 1</div>
+        <form id='search' class="search-container">
+            <input type="text" class="search-input" placeholder="Type here">
+            <button type='submit' class="search-button">Search</button>
+        </form>
+    </article>
+
+    <div>
+        <section class="recipe-card row m-3">
+            <!-- <div class="card col-2 m-3" style="height: 12rem;"> Recipe 1</div>
         <div class="card col-2 m-3">Recipe 2</div>
         <div class="card col-2 m-3">Recipe 3</div>
         <div class="card col-2 m-3">Recipe 4</div>
@@ -42,17 +46,18 @@
         <div class="card col-2 m-3">Recipe 8</div>
         <div class="card col-2 m-3">Recipe 9</div>
         <div class="card col-2 m-3">Recipe 10</div> -->
-    </section>
-</div>
+        </section>
+    </div>
 
-<footer>
-    <p>&copy; 2024 Brain Food. All Rights Reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Brain Food. All Rights Reserved.</p>
+    </footer>
 
-</main> 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="./recipes.js"></script>
-<script src="./facts.js"></script>
+    <script src="./recipes.js"></script>
+    <script src="./facts.js"></script>
 </body>
+
 </html>

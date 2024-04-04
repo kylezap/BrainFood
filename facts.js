@@ -9,6 +9,7 @@ const options = {
     }
 };
 
+//Function pulls data from API and then displays the random fact by first stating the year followed by the actual fact
 function generateFacts() {
     fetch(requestURL, options).then(function (response) {
         return response.json();
@@ -17,6 +18,8 @@ function generateFacts() {
     });
 }
 
+//Loads fact onto page once page loads
 generateFacts();
 
+//Generates and prints new fact each time button is clicked
 factButton.addEventListener('click', generateFacts);
