@@ -7,9 +7,6 @@ const recipeContainer = $('.recipe-card')
 // const foo = document.getElementById()
 
 
-localStorage.getItem
-
-
 function apiCall(event) {
 	event.preventDefault();
 	// const formSubmitInput = formSubmit.val();
@@ -30,7 +27,7 @@ function apiCall(event) {
 		})
 		.then(function (data) {
 			// console.log(recipeContent[0].display)
-
+			localStorage.setItem('search', input.val());
 			const recipeContent = data.feed;
 
 			recipeContainer.empty();
@@ -57,6 +54,7 @@ function apiCall(event) {
 				recipeCard.appendTo(recipeContainer);
 			}
 		});
+		
 };
 
 formSubmit.on('submit', apiCall);
