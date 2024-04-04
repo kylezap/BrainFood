@@ -1,6 +1,7 @@
 const formSubmit = $('#search');
 const input = $('#search-input')
-const resultsEl = $('#results')
+// const resultsEl = $('#results')
+const recipeContainer = $('.recipe-card')
 // const foo = document.getElementById()
 // const foo = document.getElementById()
 // const foo = document.getElementById()
@@ -58,7 +59,7 @@ cardTitle.appendTo(cardBody);
 cardUrl.appendTo(cardBody);
 
 // Append the final recipe card to the results element
-recipeCard.appendTo(resultsEl);
+recipeCard.appendTo(recipeContainer);
 			}
 		});
 };
