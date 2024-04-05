@@ -27,7 +27,6 @@ function apiCall(event) {
 		})
 		.then(function (data) {
 			// console.log(recipeContent[0].display)
-			localStorage.getItem()
 			localStorage.setItem('search', input.val());
 			const recipeContent = data.feed;
 
@@ -41,12 +40,18 @@ function apiCall(event) {
 
 				// console.log(recipeName, recipeImg, recipeUrl);
 
-				const recipeCard = $('<div>')
-					.addClass('card m-3 ').attr('style', 'width: 18rem;');
-				const cardImg = $('<img>').attr('src', recipeImg).addClass('card-img-top');
-				const cardBody = $('<div>').addClass('card-body');
+				// const recipeCard = $('<div>')
+				// 	.addClass('card m-3 ').attr('style', 'width: 18rem;');
+				// const cardImg = $('<img>').attr('src', recipeImg).addClass('card-img-top');
+				// const cardBody = $('<div>').addClass('card-body');
+				// const cardTitle = $('<h5>').addClass('card-title').text(recipeName);
+				// const cardUrl = $('<a>').addClass("btn btn-primary stretched-link").attr('href', recipeUrl).text('See Recipe');
+
+				const recipeCard = $('<div>').addClass('card m-3').css('width', '18rem');
+				const cardImg = $('<img>').addClass('card-img-top').attr('src', recipeImg).css('height', '200px').css('object-fit', 'cover');
+				const cardBody = $('<div>').addClass('card-body d-flex flex-column');
 				const cardTitle = $('<h5>').addClass('card-title').text(recipeName);
-				const cardUrl = $('<a>').addClass("btn btn-primary stretched-link").attr('href', recipeUrl).text('See Recipe');
+				const cardUrl = $('<a>').addClass('btn btn-primary mt-auto stretched-link').attr('href', recipeUrl).text('See Recipe');
 
 				cardImg.appendTo(recipeCard);
 				cardBody.appendTo(recipeCard);
@@ -55,7 +60,10 @@ function apiCall(event) {
 				recipeCard.appendTo(recipeContainer);
 			}
 		});
-		
+
 };
+
+
+
 
 formSubmit.on('submit', apiCall);
