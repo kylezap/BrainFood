@@ -1,15 +1,11 @@
 const formSubmit = $('#search');
 const input = $('#search-input')
-// const resultsEl = $('#results')
 const recipeContainer = $('.recipe-card')
-// const foo = document.getElementById()
-// const foo = document.getElementById()
-// const foo = document.getElementById()
+
 
 
 function apiCall(event) {
 	event.preventDefault();
-	// const formSubmitInput = formSubmit.val();
 	;
 	console.log("Inside API Call");
 	const url = `https://yummly2.p.rapidapi.com/feeds/search?start=0&maxResult=8&q=${input.val()}`;
@@ -26,7 +22,6 @@ function apiCall(event) {
 			return response.json();
 		})
 		.then(function (data) {
-			// console.log(recipeContent[0].display)
 			localStorage.setItem('search', input.val());
 			const recipeContent = data.feed;
 
@@ -37,15 +32,6 @@ function apiCall(event) {
 				const recipeName = recipeContent[i].display.displayName;
 				const recipeImg = recipeContent[i].display.images[0];
 				const recipeUrl = recipeContent[i].display.source.sourceRecipeUrl
-
-				// console.log(recipeName, recipeImg, recipeUrl);
-
-				// const recipeCard = $('<div>')
-				// 	.addClass('card m-3 ').attr('style', 'width: 18rem;');
-				// const cardImg = $('<img>').attr('src', recipeImg).addClass('card-img-top');
-				// const cardBody = $('<div>').addClass('card-body');
-				// const cardTitle = $('<h5>').addClass('card-title').text(recipeName);
-				// const cardUrl = $('<a>').addClass("btn btn-primary stretched-link").attr('href', recipeUrl).text('See Recipe');
 
 				const recipeCard = $('<div>').addClass('card m-3').css('width', '18rem');
 				const cardImg = $('<img>').addClass('card-img-top').attr('src', recipeImg).css('height', '200px').css('object-fit', 'cover');
@@ -62,8 +48,6 @@ function apiCall(event) {
 		});
 
 };
-
-
 
 
 formSubmit.on('submit', apiCall);
