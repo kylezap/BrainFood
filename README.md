@@ -4,7 +4,7 @@
 
 Brain Food is a single page application bringing together two server side APIs, Random Facts and Food Recipes, to bring users the joys of knowledge and delicious recipes. We employed responsive design principles, modern HTML/CSS, and scripting to deliver API data in a succint and pleasant user experience.
 
-[Link]([github.com/bocampo](https://kylezap.github.io/BrainFood/))
+[Link](https://kylezap.github.io/BrainFood/)
 
 ![screenshot](/assets/header.png)
 
